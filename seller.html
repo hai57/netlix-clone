@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sass/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Hind&family=Montserrat:wght@600;700&family=Poppins:wght@500;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="img/loader.gif" class="loader" alt="" />
+    <div class="alert-box">
+      <img src="img/erorr.png" class="alert-img" alt="" />
+      <p class="alert-msg">Error message</p>
+    </div>
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="link-logo" href="/">
+            <h1 class="logo">ARIA</h1>
+            <h2 class="DN">ĐÀ NẴNG</h2>
+          </a>
+        </div>
+      </nav>
+      <div class="hero-bg-image-container">
+        <img
+          src="/img/background.jpg"
+          alt="BG hero image"
+          class="hero-bg-image"
+        />
+      </div>
+      <div class="hero-bg-overlay"></div>
+    </header>
+
+    <section class="seller">
+      <div class="become-seller hide">
+        <p class="heading">become a seller</p>
+        <p class="des">
+          The seller's legal notices are sufficient to meet the seller's legal
+          disclosure obligations and other legal obligations; and the seller
+          complies with all laws applicable to their product listings and sales,
+          including where applicable the Consumer Rights Act 2015, the Consumer
+          Contracts (Information, Cancellation and Additional Charges)
+          Regulations 2013 and the Electronic Commerce (EC Directive)
+          Regulations 2002. Notwithstanding any terms agreed between a buyer and
+          a seller, the following provisions will be incorporated into the
+          contract of sale and purchase between the buyer and the seller:
+          <br />
+          (a) The price for a product will be as stated in the relevant product
+          listing; (b) Delivery charges, packaging charges, handling charges,
+          administrative charges, insurance costs, other ancillary costs and
+          charges, and VAT and other taxes will only be payable by the buyer if
+          this is expressly and clearly stated in the product listing; (c)
+          Deliveries of products must be made within the stated delivery date
+          outlined in your listing; (d) Appropriate means of delivery of
+          products must be used by the seller; and (e) Products must be of
+          satisfactory quality, and must be fit for any purpose specified in,
+          and conform in all material respects to, the product listing and any
+          other description of the products supplied or If the seller is a
+          trader and the buyer is a consumer, the provisions of Section 15 shall
+          be incorporated into the contract of sale and purchase between a buyer
+          and a seller. Both buyers and sellers undertake to comply with the
+          agreed terms and conditions of sale and purchase.
+        </p>
+        <button class="btn" id="apply-btn">apply for seller account</button>
+      </div>
+      <!-- apply form -->
+      <div class="apply-form hide">
+        <input
+          class="inp text"
+          type="text"
+          id="business-name"
+          placeholder="business name/ company name / shop name"
+        />
+        <textarea
+          class="textarea-apply"
+          id="business-add"
+          placeholder="address"
+        ></textarea>
+        <textarea
+          class="textarea-apply"
+          id="about"
+          placeholder="about"
+        ></textarea>
+        <input
+          class="inp number"
+          type="text"
+          id="number"
+          placeholder="number"
+        />
+        <input type="checkbox" checked class="checkbox" id="terms-and-cond" />
+        <label for="terms-and-cond"
+          >agree to our<a href=""> terms and conditions</a></label
+        >
+        <br />
+        <input type="checkbox" checked class="checkbox" id="legitInfo" />
+        <label for="legitInfo">all information is legit</label>
+        <button class="submit-btn" id="apply-form-btn">apply</button>
+      </div>
+    </section>
+    <section class="product-list">
+      <div class="product-listing hide">
+        <div class="add-product">
+          <p class="add-product-tittle">add product</p>
+          <button class="btn">add product</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/token.js"></script>
+    <script src="js/seller.js"></script>
+  </body>
+</html>
